@@ -1,15 +1,15 @@
-=S1=
+# S1
 
-==CompÃ©tences==
+## Compétences
 
-===Installation de satation===
+### Installation de station
 
-====Montrer la machine nouvellement installÃ©e====
+#### Montrer la machine nouvellement installée
 
 *TÃ©lÃ©charger le fichier iso le plus rÃ©cent sur le site de DÃ©bian
 *Installation de Debian
 
-====Afficher le nom de la station (uname et prompt)====
+Afficher le nom de la station (uname et prompt)====
  La commande <code>uname -n</code> permet d'afficher le nom de la station.
  Dans le prompt le nom de la station se trouve '''aprÃ¨s le @'''
 
