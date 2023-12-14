@@ -1,4 +1,3 @@
-# Wiki-RT
 =S1=
 
 ==CompÃ©tences==
