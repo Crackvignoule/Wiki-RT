@@ -142,7 +142,7 @@ Envoi de la clé de Osaka à  thorin:
  - Adresses de réseau avec la commande <code>ip route |grep 7048</code>: 10.4.48.0/24
                                                              10.244.48.0/24
 
- [[Fichier:20220316 160354.jpg|700px]]
+ ![Alt text](images/schema_network.jpg)
 
 ### liste des ports VNC utilisés
 
@@ -459,7 +459,7 @@ https://www.csa.fr/matnt/couverture
  3. <code>heatmap.py b433.csv b433.png</code> Génération de la heatmap pour visualiser les fréquences
  4. <code>display b433.png</code> affichage du png
 
- [[Fichier:waterfall_tnt.png]]
+ ![Alt text](images/waterfall_DVB.png)
 
 ### Multicast
  
