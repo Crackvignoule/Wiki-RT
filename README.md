@@ -111,7 +111,7 @@
 
 ### W2
 
-# S2: Base des services réseaux=
+# S2: Base des services réseaux
 
 
 ## Connexion Thorin, identification des paramètres
@@ -498,7 +498,7 @@ https://www.csa.fr/matnt/couverture
  netcat 10.33.109.115 2500
  netcat 10.33.109.115 22
 
-# Autres=
+# Autres
 ## Asterisk et Bluetooth
 
  Connexion au bluetooth avec le telephone:
