@@ -57,9 +57,9 @@
  Clonage: <code>cp debian-pavy.qcow2 'debian-pavy-vde2.qcow2'</code>
 
 #### Lancer les deux VMs, avec et sans VDE2
-    - Lancer VM sans VDE2: <code>kvm -m 1G -hda debian-pavy.qcow2</code>
-    - Avec VDE2: <code>kvm -m 1G -hda 'debian-pavy-vde2.qcow2' -net nic,macaddr=42:30:03:01:01:02 -net vde,sock=/var/run/vde2/kvmtap0.ctl/</code>
-    - Si le fichier est déjà sollicité par la 1ère VM, on ne peut pas l'utiliser pour la seconde, car cela créerait des conflits et rendrait la VM inutilisable.
+- Lancer VM sans VDE2: <code>kvm -m 1G -hda debian-pavy.qcow2</code>
+- Avec VDE2: <code>kvm -m 1G -hda 'debian-pavy-vde2.qcow2' -net nic,macaddr=42:30:03:01:01:02 -net vde,sock=/var/run/vde2/kvmtap0.ctl/</code>
+- Si le fichier est déjà sollicité par la 1ère VM, on ne peut pas l'utiliser pour la seconde, car cela créerait des conflits et rendrait la VM inutilisable.
 
 #### Différences paramètres IP
   Sur chaque VM:  
