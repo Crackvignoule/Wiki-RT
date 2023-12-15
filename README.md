@@ -62,7 +62,7 @@
     - Si le fichier est déjà  sollicité par la 1ère VM on ne peut pas l'utiliser pour la seconde car à§a créerait des conflits et rendrait la VM inutilisable.
 
 #### Différences paramètres IP
-  Sur chaque VM:
+  Sur chaque VM:  
     - <code>ip a (inet X.X.X.X/X)</code>  
     - <code>ip route</code>  
     - <code>cat /etc/resolv.conf</code>  
