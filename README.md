@@ -63,12 +63,12 @@
 
 #### Différences paramètres IP
   Sur chaque VM:
-    - <code>ip a (inet X.X.X.X/X)</code>
-    - <code>ip route</code>
-    - <code>cat /etc/resolv.conf</code>
+    - `<code>ip a (inet X.X.X.X/X)</code>`
+    - `<code>ip route</code>`
+    - `<code>cat /etc/resolv.conf</code>`
 
 #### Sauvegarde scp sur Thorin
-    - <code>scp debian-pavy.qcow2 pavy@thorin:debian-pavy.qcow2</code>
+    - `<code>scp debian-pavy.qcow2 pavy@thorin:debian-pavy.qcow2</code>`
 
 ### La variable PATH
  - Lancez 2 sessions avec une session en root
