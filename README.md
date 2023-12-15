@@ -46,20 +46,20 @@
 ### Machine virtuelle
 
 #### Montrer la machine virtuelle en fonctionnement
-*Création fichier VM: qemu-img create -f qcow2 debian-pavy.qcow2 4G La taille du disque sera de 4G
-*Installation Debian: kvm -m 1G -hda debian-pavy.qcow2 -cdrom debian...iso Attention à  ce que le fichier iso soit bien présent dans le même dossier
-*Invocation VM: kvm -m 1G -hda debian-pavy.qcow2 Attention à  ce que le fichier qcow2 soit bien présent dans le même dossier
+* Création fichier VM: <code>qemu-img create -f qcow2 debian-pavy.qcow2 4G</code> La taille du disque sera de 4G
+* Installation Debian: <code>kvm -m 1G -hda debian-pavy.qcow2 -cdrom debian...iso</code> Attention à ce que le fichier iso soit bien présent dans le même dossier
+* Invocation VM: <code>kvm -m 1G -hda debian-pavy.qcow2</code> Attention à ce que le fichier qcow2 soit bien présent dans le même dossier
 
-#### arrêt, puis clonage
- arrêt: <code>su</code>
+#### Arrêt, puis clonage
+ Arrêt: <code>su</code>
         <code>systemctl poweroff</code>
 
- clonage: <code>cp debian-pavy.qcow2 'debian-pavy-vde2.qcow2'</code>
+ Clonage: <code>cp debian-pavy.qcow2 'debian-pavy-vde2.qcow2'</code>
 
-#### lancer les deux VMs, avec et sans VDE2
+#### Lancer les deux VMs, avec et sans VDE2
     - Lancer VM sans VDE2: <code>kvm -m 1G -hda debian-pavy.qcow2</code>
-    - avec VDE2: <code>kvm -m 1G -hda 'debian-pavy-vde2.qcow2' -net nic,macaddr=42:30:03:01:01:02 -net vde,sock=/var/run/vde2/kvmtap0.ctl/</code>
-    - Si le fichier est déjà  sollicité par la 1ère VM on ne peut pas l'utiliser pour la seconde car à§a créerait des conflits et rendrait la VM inutilisable.
+    - Avec VDE2: <code>kvm -m 1G -hda 'debian-pavy-vde2.qcow2' -net nic,macaddr=42:30:03:01:01:02 -net vde,sock=/var/run/vde2/kvmtap0.ctl/</code>
+    - Si le fichier est déjà sollicité par la 1ère VM, on ne peut pas l'utiliser pour la seconde, car cela créerait des conflits et rendrait la VM inutilisable.
 
 #### Différences paramètres IP
   Sur chaque VM:  
