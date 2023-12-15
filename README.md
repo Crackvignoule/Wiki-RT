@@ -47,11 +47,11 @@
 
 #### Montrer la machine virtuelle en fonctionnement
 *Création fichier VM: qemu-img create -f qcow2 debian-pavy.qcow2 4G La taille du disque sera de 4G
-*Installation Debian: kvm -m 1G -hda debian-pavy.qcow2 -cdrom debian...iso Attention à  ce que le fichier iso soit bien présent dans le màªme dossier
-*Invocation VM: kvm -m 1G -hda debian-pavy.qcow2 Attention à  ce que le fichier qcow2 soit bien présent dans le màªme dossier
+*Installation Debian: kvm -m 1G -hda debian-pavy.qcow2 -cdrom debian...iso Attention à  ce que le fichier iso soit bien présent dans le même dossier
+*Invocation VM: kvm -m 1G -hda debian-pavy.qcow2 Attention à  ce que le fichier qcow2 soit bien présent dans le même dossier
 
-#### arràªt, puis clonage
- arràªt: <code>su</code>
+#### arrêt, puis clonage
+ arrêt: <code>su</code>
         <code>systemctl poweroff</code>
 
  clonage: <code>cp debian-pavy.qcow2 'debian-pavy-vde2.qcow2'</code>
@@ -97,9 +97,9 @@
 
  - Afficher les informations des écrans connectés avec la commande: <code>xrandr</code>
 
- - Affichez les informations de la fenàªtre d'un terminal xterm avec la commande: <code>xwinfo</code>   puis cliquer sur la fenàªtre choisie
+ - Affichez les informations de la fenêtre d'un terminal xterm avec la commande: <code>xwinfo</code>   puis cliquer sur la fenêtre choisie
 
- - Basculer entre affichage non graphique et graphique sans arràªter le serveur X avec les touches: Ctrl+alt+F2/3/4/5
+ - Basculer entre affichage non graphique et graphique sans arrêter le serveur X avec les touches: Ctrl+alt+F2/3/4/5
 
 ### Modification de réseau
 
@@ -511,7 +511,7 @@ https://www.csa.fr/matnt/couverture
  <code>sudo apt install asterisk</code>
  <code>sudo apt install asterisk-mobile</code>
 
-L'objectif ici va àªtre de connecter un smartphone en bluetooth à  notre serveur asterisk pour mettre en place une messagerie personalisée (ici un message personnalisé en morse) lorsque un appelant extérieur téléphonera le smartphone connecté au serveur.
+L'objectif ici va être de connecter un smartphone en bluetooth à  notre serveur asterisk pour mettre en place une messagerie personalisée (ici un message personnalisé en morse) lorsque un appelant extérieur téléphonera le smartphone connecté au serveur.
 
  Avant de commencer la configuration, il faut récupérer l'ID (souvent c'est "hci0") et l'@MAC de nà´tre contrà´leur Bluetooth avec la commande <code>hcitool dev</code>
 
